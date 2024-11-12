@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>自动答多选题</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          padding: 10px;
+        }
+        textarea {
+          width: 200px;
+          height: 100px;
+        }
+        button {
+          width: 100%;
+          margin-top: 10px;
+          padding: 10px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h3>自动答多选题</h3>
+<textarea id="answerInput" placeholder="请输入答案，格式：1-5 BD,ABD,ABC,BCD,ACD">1-5 BD,ABD,ABC,BCD,ACD
+</textarea><br>
+<button id="submitAnswer">提交答案</button>
+
+<script src="popup.js"></script>
+</body>
+</html>

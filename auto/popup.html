@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>自动答题插件</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          padding: 10px;
+        }
+        button {
+          margin: 10px 0;
+          padding: 10px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        label {
+          display: block;
+          margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<h3>选择答案类型</h3>
+
+<label>
+    <input type="radio" name="answerType" value="single" checked> 单选
+</label>
+
+<label>
+    <input type="radio" name="answerType" value="multiple"> 多选
+</label>
+
+<textarea id="answerInput" rows="6" cols="25" placeholder="请输入答案，如 1-3 ABC 或 1-5 BD,ABD,ABC,BCD,ACD">
+</textarea><br>
+
+<button id="submitAnswer">提交答案</button>
+
+<script src="popup.js"></script>
+</body>
+</html>

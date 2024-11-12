@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "自动答题插件",
+  "version": "1.0",
+  "description": "根据输入的答案格式，自动选择正确答案",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
